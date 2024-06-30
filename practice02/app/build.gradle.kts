@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -7,9 +9,14 @@ android {
     namespace = "com.example.android_practice02"
     compileSdk = 34
 
+
+    viewBinding{
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.android_practice02"
-        minSdk = 24
+        minSdk = 22
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
