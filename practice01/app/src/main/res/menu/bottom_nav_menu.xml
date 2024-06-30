@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction = "always"
+        android:enabled="true"
+        android:title="홈"
+        tool:ignore= "AlwaysShowAction"/>
+    <item
+        android:id="@+id/likeFragment"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:title="좋아요"
+        />
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:title="메뉴" />
+</menu>
