@@ -25,8 +25,8 @@ class LookFragment : Fragment() {
 
         //뷰페이저 설정
         val lookAdapter = LookVPAdapter(this)
-        binding.homeRecommendVp.adapter = lookAdapter
-        binding.homeRecommendVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        binding.lookRecommendVp.adapter = lookAdapter
+        binding.lookRecommendVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
         return binding.root
     }
