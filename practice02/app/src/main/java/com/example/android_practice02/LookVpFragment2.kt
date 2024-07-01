@@ -5,20 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.android_practice02.databinding.FragmentHomeBinding
+import com.example.android_practice02.databinding.FragmentVp2Binding
 
-class HomeFragment : Fragment() {
+class LookVpFragment2 : Fragment() {
 
-    lateinit var binding: FragmentHomeBinding
-
+    lateinit var binding: FragmentVp2Binding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = FragmentVp2Binding.inflate(inflater, container, false)
 
         return binding.root
     }
-
 }
