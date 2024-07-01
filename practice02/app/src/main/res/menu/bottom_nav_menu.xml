@@ -18,7 +18,6 @@
     <item
         android:id="@+id/albumFragment"
         app:showAsAction="always"
-        android:background="@drawable/menu_item_background"
         android:title="앨범" />
 
 </menu>

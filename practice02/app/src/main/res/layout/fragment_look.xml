@@ -4,6 +4,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/look_pannel_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        app:ci_drawable_unselected="@drawable/gray_radius"
+        app:ci_drawable="@drawable/blue_radius"
+        app:ci_animator="@animator/scale_with_alpha"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/look_recommend_vp"
         android:layout_width="match_parent"
@@ -11,16 +22,25 @@
         android:layout_marginTop="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뷰페이져 연습, 인디케이터, 자동전환"
+        app:layout_constraintTop_toBottomOf="@id/look_recommend_vp"
         />
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/home_recommend_vp2"
+
+        android:id="@+id/look_recommend_vp2"
         android:layout_width="match_parent"
         android:layout_height="230dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/tv1"/>
 
 
 

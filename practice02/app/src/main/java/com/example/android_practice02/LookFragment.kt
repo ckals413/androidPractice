@@ -22,11 +22,21 @@ class LookFragment : Fragment() {
     ): View? {
         binding = FragmentLookBinding.inflate(inflater, container, false)
 
-
+        // =====================================================
         //뷰페이저 설정
         val lookAdapter = LookVPAdapter(this)
         binding.lookRecommendVp.adapter = lookAdapter
         binding.lookRecommendVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
+        //인디케이터 연결
+        binding.lookPannelIndicator.setViewPager(binding.lookRecommendVp)
+
+
+        //======================================================
+        //뷰페이저 설정
+        val lookAdapter2 = LookVPAdapter(this)
+        binding.lookRecommendVp2.adapter = lookAdapter2
+        binding.lookRecommendVp2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
         return binding.root
     }

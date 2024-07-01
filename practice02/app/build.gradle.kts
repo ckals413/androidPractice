@@ -44,6 +44,10 @@ android {
 
 dependencies {
 
+    //인디케이터(뷰페이저 동그라미)
+    //circleindicator
+    implementation("me.relex:circleindicator:2.1.6")
+
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
