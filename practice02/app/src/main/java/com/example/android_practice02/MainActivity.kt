@@ -36,6 +36,12 @@ class MainActivity : AppCompatActivity() {
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
+                R.id.albumFragment->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm,AlbumFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true
+                }
                 //여기에 바텀네비뷰에 항목(아이템)이 더 있다면, 위와 같은 템플릿으로 추가하기
             }
             false

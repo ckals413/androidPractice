@@ -15,4 +15,10 @@
         app:showAsAction="always"
         android:title="둘러보기" />
 
+    <item
+        android:id="@+id/albumFragment"
+        app:showAsAction="always"
+        android:background="@drawable/menu_item_background"
+        android:title="앨범" />
+
 </menu>
