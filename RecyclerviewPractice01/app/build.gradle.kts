@@ -2,6 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
+android{
+    viewBinding{
+        enable = true
+    }
+}
 
 android {
     namespace = "com.example.recyclerviewpractice01"
