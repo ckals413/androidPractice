@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerviewpractice01.databinding.ActivityMainBinding
 
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.rv.adapter = CustomAdapter(profileList)
         binding.rv.layoutManager = LinearLayoutManager(this)
-
+        binding.rv.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
 
     }
 }
