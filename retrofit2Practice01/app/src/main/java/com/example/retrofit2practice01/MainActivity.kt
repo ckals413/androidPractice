@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.telecom.Call
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.project.databinding.ActivityMainBinding
+import com.example.retrofit2practice01.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -14,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
 
-    private val binding by lazy {ActivityMainBinding.inflate(layoutInflater) }
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     private val adapter by lazy { Adapter(dataList) }
     private val dataList = mutableListOf<MovieData.BoxOfficeResult.DailyBoxOffice?>()
     override fun onCreate(savedInstanceState: Bundle?) {
