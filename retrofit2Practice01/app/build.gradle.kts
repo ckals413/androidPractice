@@ -2,18 +2,13 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
-android{
-    viewBinding{
-        enable = true
-    }
-}
 
 android {
-    namespace = "com.example.recyclerviewpractice01"
+    namespace = "com.example.retrofit2practice01"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.recyclerviewpractice01"
+        applicationId = "com.example.retrofit2practice01"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -51,8 +46,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-
-    //레트로핏2를 위해 의존성 추가
+    //레트로핏2를 위한 의존성 추가 
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
