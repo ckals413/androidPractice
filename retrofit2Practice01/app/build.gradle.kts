@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -5,10 +6,13 @@ plugins {
 
 android {
 
-    viewBinding{
-        enable = true
+    // AndroidStudio 4.0 ~
+    buildFeatures{
+        viewBinding = true
     }
-    
+
+
+
     namespace = "com.example.retrofit2practice01"
     compileSdk = 34
 

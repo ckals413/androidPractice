@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission> // 인터넷 통신을 해야하기 때문에,manifests 파일에 application 범위 위에 설정해준다.
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Retrofit2Practice01"
         tools:targetApi="31">
+        <service
+            android:name=".MovieService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
