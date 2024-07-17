@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         //1.Retrofit 객체 초기화
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("http://www.kobis.or.kr/")
+            .baseUrl("https://www.kobis.or.kr/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         //2. 서비스 객체 생성
